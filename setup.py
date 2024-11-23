@@ -9,8 +9,8 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "lucky-build=lucky.builder:main",
-            "lucky-upload=lucky.uploader:main"
+            "lucky-build=Lucky.builder:main",
+            "lucky-upload=Lucky.uploader:main"
         ]
     },
 )
