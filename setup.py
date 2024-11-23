@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="Lucky",
-    version="0.1.3",
+    version="0.1.4",
     packages=find_packages(),
     install_requires=[
         "requests",
@@ -22,10 +22,10 @@ setup(
     python_requires='>=3.11',  # 指定支持的 Python 版本
     entry_points={
         "console_scripts": [
-            "lucky-build=Lucky.builder:main",
-            "lucky-upload=Lucky.uploader:main"
+            "lucky=Lucky.cli:main",  # 这将使得 'lucky' 命令触发 cli.py 中的 main 函数
         ]
-    },
+    }
+
     # include_package_data=True,  # 如果你有额外的文件（如图片、配置文件等）需要包含在包内
     # package_data={  # 通过包的目录结构来指定额外的文件
     #     'your_package': ['data/*.dat'],
