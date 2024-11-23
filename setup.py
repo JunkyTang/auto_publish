@@ -6,6 +6,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "requests",
+        "git+https://github.com/yourusername/Lucky.git@v0.1.0#egg=Lucky",
     ],
     entry_points={
         "console_scripts": [
