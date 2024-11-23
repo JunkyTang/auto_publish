@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="Lucky",
+    name="lucky",
     version="0.1.4",
     packages=find_packages(),
     install_requires=[
         "requests",
     ],
-    author="Lucky",
+    author="lucky",
     author_email="Luck@where.com",  # 作者邮箱
     description="A short description of your package",  # 包的简短描述
     long_description="A long description of your package",  # 包的详细描述
@@ -22,7 +22,7 @@ setup(
     python_requires='>=3.11',  # 指定支持的 Python 版本
     entry_points={
         "console_scripts": [
-            "lucky=Lucky.cli:main",  # 这将使得 'lucky' 命令触发 cli.py 中的 main 函数
+            "lucky=lucky.cli:main",  # 这将使得 'lucky' 命令触发 cli.py 中的 main 函数
         ]
     }
 

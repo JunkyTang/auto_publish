@@ -1,10 +1,10 @@
 import argparse
-from Lucky.builder import Builder
-from Lucky.uploader import Uploader
+from lucky.builder import Builder
+from lucky.uploader import Uploader
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Lucky iOS Build and Upload Tool")
+    parser = argparse.ArgumentParser(description="lucky iOS Build and Upload Tool")
 
     # 定义可选的子命令
     subparsers = parser.add_subparsers(dest="command")
