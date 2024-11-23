@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name="Lucky",
-    version="0.1.1",
+    version="0.1.2",
     packages=find_packages(),
     install_requires=[
         "requests",
-        "git+https://github.com/JunkyTang/auto_publish.git@v0.1.1#egg=Lucky",
+        "git+https://github.com/JunkyTang/auto_publish.git@0.1.2#egg=Lucky",
     ],
     entry_points={
         "console_scripts": [
