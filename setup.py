@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name="Lucky",
-    version="0.1.0",
+    version="0.1.1",
     packages=find_packages(),
     install_requires=[
         "requests",
-        "git+https://github.com/yourusername/Lucky.git@v0.1.0#egg=Lucky",
+        "git+https://github.com/JunkyTang/auto_publish.git@v0.1.1#egg=Lucky",
     ],
     entry_points={
         "console_scripts": [
@@ -32,3 +32,8 @@ setup(
 #         }
 #     }
 # }
+
+
+# lucky build config.json Target1 --env release
+# lucky upload config.json Target1 --platform pgy
+# lucky upload config.json Target1 --platform appstore
