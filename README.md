@@ -31,7 +31,7 @@ pip3 uninstall lucky
     "workspace_path": "ProjectName/ProjectName",
     "export_options": "ExportOptions.plist",
     "pgy_api_key": "xxxxxxxxxxxxxx",
-    "asc_provider": "app id",
+    "asc_provider": "apple team id",
     "targets": {
         "targetName": {
             "scheme": "scheme name"
@@ -58,7 +58,7 @@ pip3 uninstall lucky
 ```python
 
 // debug
-lucky build config.json Target1 --env
+lucky build config.json Target1 --env debug
 // release
 lucky build config.json Target1 --env release
 
