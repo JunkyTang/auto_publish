@@ -30,7 +30,7 @@ def main():
         Builder.build_project(args.config, args.target, args.env)
     elif args.command == "upload":
         if args.platform == "pgy":
-            Uploader.upload_to_pgy(args.config, args.target)
+            Uploader.upload_to_pgyer(args.config, args.target)
         elif args.platform == "appstore":
             Uploader.upload_to_appstore(args.config, args.target)
 

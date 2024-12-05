@@ -7,7 +7,7 @@ class Builder:
         with open(config_path, 'r') as f:
             config = json.load(f)
 
-        project_path = config['project_path']
+        workspace_path = config.get('workspace_path')
         scheme = config['targets'][target_name]['scheme']
         export_options_path = config['export_options']
 
@@ -19,8 +19,8 @@ class Builder:
             subprocess.run(
                 [
                     "xcodebuild",
+                    "-workspace", workspace_path,
                     "-scheme", scheme,
-                    "-project", project_path,
                     "-configuration", build_config,  # 添加配置
                     "-archivePath", f"{scheme}.xcarchive",
                     "archive"
