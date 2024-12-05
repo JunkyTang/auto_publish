@@ -68,12 +68,12 @@ lucky build config.json Target1 --env release
 
 ```python
 // after build
-lucky upload config.json Target --platform pgy
+lucky upload config.json Target --platform appstore
 ```
 
 #### upload to pgyer
 
 ```python
 // after build
-lucky upload config.json Target --platform appstore
+lucky upload config.json Target --platform pgy
 ```
